@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape test/test-*.js",
     "distribute-mac": "electron-packager ./ siege --platform=darwin --arch=x64 --version=0.31.2 --ignore='(node_modules/(electron-(packager|prebuilt)|gulp|gulp-less)|src/)'",
     "distribute": "electron-packager ./ siege --platform=darwin,linux --arch=x64 --version=0.31.2 --ignore='(node_modules/(electron-(packager|prebuilt)|gulp|gulp-less)|src/)'"
   },
