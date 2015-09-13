@@ -1,0 +1,30 @@
+{
+  "name": "siege",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "distribute-mac": "electron-packager ./ siege --platform=darwin --arch=x64 --version=0.31.2 --ignore='(node_modules/(electron-(packager|prebuilt)|gulp|gulp-less)|src/)'",
+    "distribute": "electron-packager ./ siege --platform=darwin,linux --arch=x64 --version=0.31.2 --ignore='(node_modules/(electron-(packager|prebuilt)|gulp|gulp-less)|src/)'"
+  },
+  "dependencies": {
+    "request": "^2.61.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^0.32.2",
+    "gulp": "^3.9.0",
+    "tape": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accesolibre/siege.git"
+  },
+  "author": "Jose-Luis Rivas <me@ghostbar.co>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accesolibre/siege/issues"
+  },
+  "homepage": "https://github.com/accesolibre/siege#readme"
+}
